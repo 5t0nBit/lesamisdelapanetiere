@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Amis de la Panetière - Campagne de soutien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Les Amis de la Panetière</h1>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#why">Pourquoi donner ?</a>
+        <a href="#donate">Faire un don</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h2>Sauvons l'artisanat, soutenons nos employés</h2>
+      <p>Participez à la relance d'un projet artisanal unique et aidez-nous à préserver des emplois locaux !</p>
+      <a href="#donate" class="cta-btn">Faire un don</a>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h3>À propos de l'association</h3>
+      <p>L'association Les Amis de la Panetière œuvre pour la sauvegarde de l'artisanat local et le soutien aux artisans et employés de la Panetière. Après une période difficile, nous lançons une campagne de collecte de fonds pour redémarrer un projet rentable et durable.</p>
+    </div>
+  </section>
+  <section id="why">
+    <div class="container">
+      <h3>Pourquoi donner ?</h3>
+      <ul>
+        <li>Sauver des emplois locaux</li>
+        <li>Préserver un savoir-faire artisanal unique</li>
+        <li>Participer à la relance d'une activité économique durable</li>
+      </ul>
+      <p>Votre don, quel qu'en soit le montant, est essentiel pour la réussite de ce projet !</p>
+    </div>
+  </section>
+  <section id="testimonials">
+    <div class="container">
+      <h3>Témoignages</h3>
+      <blockquote>"Grâce à la Panetière, j'ai pu apprendre un métier et subvenir aux besoins de ma famille." – Marie, artisane</blockquote>
+      <blockquote>"Votre soutien est vital pour que nous puissions continuer à transmettre notre passion." – Jean, employé</blockquote>
+    </div>
+  </section>
+  <section id="donate">
+    <div class="container">
+      <h3>Faire un don</h3>
+      <p>Pour soutenir notre projet, cliquez sur le bouton ci-dessous :</p>
+      <a href="#" class="cta-btn">Je fais un don</a>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="container">
+      <p>Contact : lesamisdelapanetiere@gmail.com | Suivez-nous sur <a href="#">Facebook</a></p>
+      <p>&copy; 2024 Les Amis de la Panetière. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Retour en haut">&#8679;</button>
+  <script>
+    const backToTop = document.getElementById('backToTop');
+    const header = document.querySelector('header');
+    function toggleBackToTop() {
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      if (window.scrollY > headerBottom) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    }
+    window.addEventListener('scroll', toggleBackToTop);
+    backToTop.onclick = function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>
+</body>
+</html> 
